@@ -8,7 +8,7 @@ class WifiNamePlugin {
     try {
       final String? wifiName = await _channel.invokeMethod('getWifiName');
       return wifiName;
-    } on PlatformException catch (e) {
+    } on PlatformException catch (_) {
       return null;
     }
   }
@@ -17,7 +17,7 @@ class WifiNamePlugin {
     try {
       final String? bssid = await _channel.invokeMethod('getWifiBSSid');
       return bssid;
-    } on PlatformException catch (e) {
+    } on PlatformException catch (_) {
       return null;
     }
   }
@@ -26,7 +26,7 @@ class WifiNamePlugin {
     try {
       final String? ip = await _channel.invokeMethod('getIPAddress');
       return ip;
-    } on PlatformException catch (e) {
+    } on PlatformException catch (_) {
       return null;
     }
   }
@@ -35,7 +35,7 @@ class WifiNamePlugin {
     try {
       final String? mask = await _channel.invokeMethod('getMaskAddress');
       return mask;
-    } on PlatformException catch (e) {
+    } on PlatformException catch (_) {
       return null;
     }
   }
@@ -43,7 +43,7 @@ class WifiNamePlugin {
   static Future<bool> requestPermission() async {
     try {
       return await _channel.invokeMethod('requestPermission');
-    } on PlatformException catch (e) {
+    } on PlatformException catch (_) {
       return false;
     }
   }
