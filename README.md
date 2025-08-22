@@ -1,6 +1,6 @@
 # wifi_name_plugin
 
-Recupera il nome della rete Wi-Fi corrente su Android e iOS.
+Recupera il nome della rete Wi-Fi corrente su iOS.
 
 ## Installazione
 
