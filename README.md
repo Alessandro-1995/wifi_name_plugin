@@ -23,7 +23,11 @@ print(ssid);
 ### Note sui permessi
 
 - **iOS**: aggiungi NSLocationWhenInUseUsageDescription e abilita Wi-Fi Info capability.
-- **info.plist**: <key>NSLocationWhenInUseUsageDescription</key>
-  <string>Serve per ottenere il nome della rete Wi-Fi</string>
-  <key>com.apple.developer.networking.wifi-info</key>
-  <true/>
+- **info.plist**:
+
+```dart
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Serve per ottenere il nome della rete Wi-Fi</string>
+    <key>com.apple.developer.networking.wifi-info</key>
+    <true/>
+```
