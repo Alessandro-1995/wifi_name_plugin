@@ -8,7 +8,7 @@ Aggiungi al `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  wifi_name_plugin: ^1.0.0
+  wifi_name_plugin: ^0.0.1
 ```
 
 ## Uso
@@ -22,5 +22,8 @@ print(ssid);
 
 ### Note sui permessi
 
-- **Android**: serve ACCESS_FINE_LOCATION per ottenere il SSID. Se il plugin restituisce "PERMISSION_REQUIRED", richiedi i permessi runtime.
 - **iOS**: aggiungi NSLocationWhenInUseUsageDescription e abilita Wi-Fi Info capability.
+- **info.plist**: <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Serve per ottenere il nome della rete Wi-Fi</string>
+  <key>com.apple.developer.networking.wifi-info</key>
+  <true/>

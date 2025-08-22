@@ -1,0 +1,26 @@
+name: wifi_name_plugin
+description: Recupera il nome della rete Wi-Fi corrente su iOS.
+version: 0.0.1
+homepage: https://github.com/Alessandro-1995/wifi_name_plugin
+repository: https://github.com/Alessandro-1995/wifi_name_plugin
+publish_to: "https://pub.dev"
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=3.3.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: WifiNamePlugin
